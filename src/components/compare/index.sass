@@ -78,7 +78,7 @@
                             display: block
                         .address 
                             font-size: 1.3rem 
-                            color: var(--sub-text)
+                            color: #8E99A3
                             padding-bottom: 1rem
                             display: block
                         .price 
@@ -122,6 +122,10 @@
                 td:not(:first-child)
                     flex: 0 0 50%
                     max-width: 50%
+            tr:last-child
+                td 
+                    &:before 
+                        display: none
             tr:not(:first-child)
                 td
                     &:before
@@ -136,6 +140,7 @@
     left: 0
     transition: .3s all
     background: #ffffff
+    z-index: 999
     &.active 
         transform: translateY(100%)
     .zoom
